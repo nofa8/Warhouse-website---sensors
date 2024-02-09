@@ -1,0 +1,137 @@
+/* Reset alguns default styles */
+body, h1, h5, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set estilos de font Iniciais */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: radial-gradient( circle at center,#001f3f, #008cbb);
+    background-repeat: no-repeat;
+}
+
+/* Max-width, Padding*/
+.container {
+    max-width: 1200px;
+    margin-top: 1%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Spacing para os elementos */
+h1, h5, p, ul {
+    margin-bottom: 10px;
+}
+
+/* Adicionar padding e border aos cards */
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+/*CSS Barra de navegação */
+.navbar {
+    background: linear-gradient(to right, #557ef0, #fff);
+    padding: 10px 20px;
+    
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #56cfdf;    
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #333;
+}
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+/* Estilo btn */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-secondary {
+    color: #007bff;
+    background-color: transparent;
+    border: 1px solid #007bff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Estilo elementos form */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Estilo das imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+.historyLk{
+    text-decoration: none; 
+    color: #000000; 
+    
+    padding: 5px 13px; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-size: 18px; 
+}
+.historyLk:hover{
+    background: radial-gradient( circle at center,#001f3f, #008cbb);
+    color:#fff;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .sensor{
+        min-height: auto;
+        min-width: auto;
+    }
+    .atuador{
+        min-width: auto;
+        min-height: auto;
+    }
+}
